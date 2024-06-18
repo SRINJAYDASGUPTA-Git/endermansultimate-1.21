@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "gemstones:block/ruby_block"
+    "all": "gemstones:block/sapphire_ore"
   }
 }

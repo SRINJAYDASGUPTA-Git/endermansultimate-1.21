@@ -1,5 +1,6 @@
 package net.enderman.gemstones;
 
+import net.enderman.gemstones.block.ModBlocks;
 import net.enderman.gemstones.item.ModItemGroups;
 import net.enderman.gemstones.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -18,6 +19,8 @@ public class EndermansGemstones implements ModInitializer {
 		// Proceed with mild caution.
 		ModItemGroups.registerItemGroups();
 		ModItems.registerModItems();
+
+		ModBlocks.registerBlocks();
 		LOGGER.info("Hello Fabric world!");
 	}
 }

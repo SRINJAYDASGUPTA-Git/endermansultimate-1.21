@@ -1,5 +1,14 @@
 {
     "item.gemstones.ruby" : "Ruby",
     "item.gemstones.raw_ruby" : "Raw Ruby",
+    "item.gemstones.sapphire": "Sapphire",
+
+    "block.gemstones.ruby_block": "Ruby Block",
+    "block.gemstones.raw_ruby_block": "Raw Ruby Block",
+    "block.gemstones.sapphire_block": "Sapphire Block",
+    "block.gemstones.sapphire_ore": "Sapphire Ore",
+    "block.gemsotnes.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+
+
     "itemgroup.gemstone": "Gemstones"
 }
