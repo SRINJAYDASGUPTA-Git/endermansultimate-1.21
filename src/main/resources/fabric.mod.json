@@ -1,8 +1,8 @@
 {
 	"schemaVersion": 1,
-	"id": "endermansultimate",
+	"id": "gemstones",
 	"version": "${version}",
-	"name": "Enderman's Ultimate",
+	"name": "Enderman's Gemstones",
 	"description": "Restarting my modding hobby",
 	"authors": [
 		"Me!"
@@ -12,21 +12,21 @@
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
 	"license": "MIT",
-	"icon": "assets/endermansultimate/icon.png",
+	"icon": "assets/gemstones/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"net.enderman.endermansultimate.EndermansUltimate"
+			"net.enderman.gemstones.EndermansGemstones"
 		],
 		"client": [
-			"net.enderman.endermansultimate.EndermansUltimateClient"
+			"net.enderman.gemstones.EndermansGemstonesClient"
 		],
 		"fabric-datagen": [
-			"net.enderman.endermansultimate.EndermansUltimateDataGenerator"
+			"net.enderman.gemstones.EndermansGemstonesDataGenerator"
 		]
 	},
 	"mixins": [
-		"endermansultimate.mixins.json"
+		"gemstones.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.11",

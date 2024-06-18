@@ -1,9 +1,9 @@
-package net.enderman.endermansultimate;
+package net.enderman.gemstones;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 
-public class EndermansUltimateDataGenerator implements DataGeneratorEntrypoint {
+public class EndermansGemstonesDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 

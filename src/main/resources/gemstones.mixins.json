@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "net.enderman.endermansultimate.mixin",
+	"package": "net.enderman.gemstones.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
 		"ExampleMixin"

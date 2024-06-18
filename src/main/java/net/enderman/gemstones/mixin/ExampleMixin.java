@@ -1,4 +1,4 @@
-package net.enderman.endermansultimate.mixin;
+package net.enderman.gemstones.mixin;
 
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
