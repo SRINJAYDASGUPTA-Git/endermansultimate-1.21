@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "endermansultimate",
+	"version": "${version}",
+	"name": "Enderman's Ultimate",
+	"description": "Restarting my modding hobby",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/endermansultimate/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.enderman.endermansultimate.EndermansUltimate"
+		],
+		"client": [
+			"net.enderman.endermansultimate.EndermansUltimateClient"
+		],
+		"fabric-datagen": [
+			"net.enderman.endermansultimate.EndermansUltimateDataGenerator"
+		]
+	},
+	"mixins": [
+		"endermansultimate.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
