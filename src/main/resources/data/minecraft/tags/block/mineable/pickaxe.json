@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "gemstones:ruby_block",
+    "gemstones:raw_ruby_block",
+    "gemstones:sapphire_block"
+  ]
+}

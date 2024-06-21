@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "gemstones:sapphire_block"
+    }
+  ],
+  "result": {
+    "id": "gemstones:sapphire",
+    "count": 9
+  }
+}
