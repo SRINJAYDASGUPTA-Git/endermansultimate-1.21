@@ -1,8 +1,13 @@
 {
-  "replace": false,
   "values": [
     "gemstones:ruby_block",
     "gemstones:raw_ruby_block",
-    "gemstones:sapphire_block"
+    "gemstones:sapphire_block",
+    "gemstones:ruby_ore",
+    "gemstones:sapphire_ore",
+    "gemstones:deepslate_sapphire_ore",
+    "gemstones:deepslate_ruby_ore",
+    "gemstones:nether_ruby_ore",
+    "gemstones:endstone_ruby_ore"
   ]
 }

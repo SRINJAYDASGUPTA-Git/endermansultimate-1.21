@@ -1,13 +1,13 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 100,
-  "experience": 0.7,
-  "group": "copper_ingot",
+  "cookingtime": 50,
+  "experience": 0.5,
+  "group": "ruby",
   "ingredient": {
-    "item": "minecraft:raw_copper"
+    "item": "gemstones:raw_ruby"
   },
   "result": {
-    "id": "minecraft:copper_ingot"
+    "id": "gemstones:ruby"
   }
 }

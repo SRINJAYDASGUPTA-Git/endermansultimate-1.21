@@ -8,10 +8,10 @@
   ],
   "key": {
     "#":{
-      "item": "gemstones:ruby"
+      "item": "gemstones:raw_ruby"
     }
   },
   "result": {
-    "id": "gemstones:ruby_block"
+    "id": "gemstones:raw_ruby_block"
   }
 }

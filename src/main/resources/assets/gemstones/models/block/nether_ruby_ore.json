@@ -2,6 +2,5 @@
     "parent": "block/cube_all",
     "textures": {
       "all": "gemstones:block/nether_ruby_ore"
-      "all": "gemstones:block/nether_ruby_ore"
     }
   }

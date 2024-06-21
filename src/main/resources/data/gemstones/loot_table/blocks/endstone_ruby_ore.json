@@ -26,7 +26,7 @@
                   }
                 }
               ],
-              "name": "gemstones:ruby_ore"
+              "name": "gemstones:endstone_ruby_ore"
             },
             {
               "type": "minecraft:item",
@@ -35,8 +35,8 @@
                   "add": false,
                   "count": {
                     "type": "minecraft:uniform",
-                    "max": 5.0,
-                    "min": 2.0
+                    "max": 7.0,
+                    "min": 3.0
                   },
                   "function": "minecraft:set_count"
                 },

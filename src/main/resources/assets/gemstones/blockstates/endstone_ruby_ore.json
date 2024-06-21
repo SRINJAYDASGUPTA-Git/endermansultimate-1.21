@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "gemstones:block/nether_ruby_ore"
+      "model": "gemstones:block/endstone_ruby_ore"
     }
   }
 }

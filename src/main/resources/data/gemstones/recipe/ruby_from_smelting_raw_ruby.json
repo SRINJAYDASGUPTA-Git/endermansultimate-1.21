@@ -1,13 +1,13 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 200,
+  "cookingtime": 100,
   "experience": 0.7,
-  "group": "copper_ingot",
+  "group": "ruby",
   "ingredient": {
-    "item": "minecraft:raw_copper"
+    "item": "gemstones:raw_ruby"
   },
   "result": {
-    "id": "minecraft:copper_ingot"
+    "id": "gemstones:ruby"
   }
 }

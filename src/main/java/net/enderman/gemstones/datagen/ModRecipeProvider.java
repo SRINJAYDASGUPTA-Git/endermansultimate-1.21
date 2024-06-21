@@ -1,2 +1,4 @@
-package net.enderman.gemstones.datagen;public class ModRecipeProvider {
+package net.enderman.gemstones.datagen;
+
+public class ModRecipeProvider {
 }
