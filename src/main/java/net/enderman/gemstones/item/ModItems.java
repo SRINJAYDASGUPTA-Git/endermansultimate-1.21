@@ -1,6 +1,7 @@
 package net.enderman.gemstones.item;
 
 import net.enderman.gemstones.EndermansGemstones;
+import net.enderman.gemstones.item.custom.ValuableDetectorItem;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -10,6 +11,8 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 
 public class ModItems {
+    public static final Item VALUABLE_DETECTOR = registerItem("valuable_detector", 
+    new ValuableDetectorItem(new Item.Settings().maxDamage(64)));
     public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings()));
     public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings()));
 

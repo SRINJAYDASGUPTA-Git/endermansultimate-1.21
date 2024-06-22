@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModItems.RAW_RUBY);
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModItems.ALEXANDRITE);
+                        entries.add(ModItems.VALUABLE_DETECTOR);
 
                         //Blocks
                         entries.add(ModBlocks.RUBY_BLOCK);

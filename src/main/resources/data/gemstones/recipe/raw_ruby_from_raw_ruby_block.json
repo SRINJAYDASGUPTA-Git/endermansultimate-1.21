@@ -1,17 +1,13 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "category": "misc",
-  "pattern" : [
-    "###",
-    "###",
-    "###"
-  ],
-  "key": {
-    "#":{
-      "item": "gemstones:raw_ruby"
+  "type": "minecraft:crafting_shapeless",
+  "category": "building",
+  "ingredients": [
+    {
+      "item": "gemstones:raw_ruby_block"
     }
-  },
+  ],
   "result": {
-    "id": "gemstones:raw_ruby_block"
+    "id": "gemstones:raw_ruby",
+    "count": 9
   }
 }
