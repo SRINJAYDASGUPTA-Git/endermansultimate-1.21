@@ -1,5 +1,6 @@
 package net.enderman.gemstones.item.custom;
 
+import net.enderman.gemstones.util.ModTags;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
@@ -43,6 +44,6 @@ public class ValuableDetectorItem extends Item {
     }
 
     private boolean isValuableBlock(BlockState blockState) {
-        return blockState.isOf(Blocks.IRON_ORE) || blockState.isOf(Blocks.GOLD_ORE) || blockState.isOf(Blocks.DIAMOND_ORE) || blockState.isOf(Blocks.EMERALD_ORE) || blockState.isOf(Blocks.LAPIS_ORE) || blockState.isOf(Blocks.REDSTONE_ORE) || blockState.isOf(Blocks.NETHER_QUARTZ_ORE) || blockState.isOf(Blocks.ANCIENT_DEBRIS);
+        return blockState.isIn(ModTags.Blocks.VALUABLE_DETECTOR_DETECTABLE_BLOCKS);
     }
 }

@@ -1,0 +1,14 @@
+{
+    "values":[
+        "gemstones:ruby_ore",
+        "gemstones:sapphire_ore",
+        "#minecraft:emerald_ores",
+        "#minecraft:diamond_ores",
+        "#minecraft:gold_ores",
+        "#minecraft:iron_ores",
+        "#minecraft:coal_ores",
+        "#minecraft:lapis_ores",
+        "#minecraft:redstone_ores",
+        "#minecraft:copper_ores"
+    ]
+}
