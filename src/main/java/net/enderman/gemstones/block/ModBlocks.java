@@ -1,10 +1,7 @@
 package net.enderman.gemstones.block;
 
 import net.enderman.gemstones.EndermansGemstones;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -43,6 +40,27 @@ public class ModBlocks {
         public static final Block ENDSTONE_RUBY_ORE = registerBlock("endstone_ruby_ore",
                         new ExperienceDroppingBlock(UniformIntProvider.create(4, 7),
                                         AbstractBlock.Settings.copy(Blocks.END_STONE).strength(2.5f)));
+        //Stairs and Slabs:
+        //TODO: Implement the SLABS, STAIRS, BUTTON, PRESSURE PLATE, FENCE, FENCE GATE, WALL, DOOR and TRAPDOORS for Ruby and Sapphire
+        public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+                new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(), AbstractBlock.Settings.copy(Blocks.STONE)));
+        public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+                new SlabBlock(AbstractBlock.Settings.copy(Blocks.STONE)));
+
+        public static final Block RUBY_BUTTON = registerBlock("ruby_slab",
+                new ButtonBlock(BlockSetType.IRON, 10, AbstractBlock.Settings.copy(Blocks.STONE)));
+        public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+                new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.STONE)));
+
+        public static final Block RUBY_FENCE = registerBlock("ruby_fence",
+                new FenceBlock(AbstractBlock.Settings.copy(Blocks.STONE)));
+        public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate",
+                new FenceGateBlock(WoodType.ACACIA, AbstractBlock.Settings.copy(Blocks.STONE)));
+
+        public static final Block RUBY_WALL = registerBlock("ruby_fence",
+                new WallBlock(AbstractBlock.Settings.copy(Blocks.STONE)));
+        public static final Block RUBY_DOOR = registerBlock("ruby_door",
+                new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.copy(Blocks.STONE)));
 
         private static Block registerBlock(String name, Block block) {
                 registerBlockItem(name, block);

@@ -24,7 +24,6 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
     public ModLootTableProvider(FabricDataOutput dataOutput, CompletableFuture<WrapperLookup> registryLookup) {
         super(dataOutput, registryLookup);
-        // TODO Auto-generated constructor stub
     }
 
     @Override

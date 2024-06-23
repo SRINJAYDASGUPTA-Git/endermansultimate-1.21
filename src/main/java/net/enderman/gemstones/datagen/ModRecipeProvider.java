@@ -21,7 +21,7 @@ public class ModRecipeProvider extends FabricRecipeProvider{
 
     public ModRecipeProvider(FabricDataOutput output, CompletableFuture<WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
-        //TODO Auto-generated constructor stub
+
     }
 
     @Override

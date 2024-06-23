@@ -12,7 +12,7 @@ public class ModModelProvider extends FabricModelProvider {
 
     public ModModelProvider(FabricDataOutput output) {
         super(output);
-        //TODO Auto-generated constructor stub
+
     }
 
     @Override

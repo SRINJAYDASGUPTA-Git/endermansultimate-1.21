@@ -2,7 +2,6 @@ package net.enderman.gemstones.item.custom;
 
 import net.enderman.gemstones.util.ModTags;
 import net.minecraft.block.BlockState;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemUsageContext;
@@ -15,7 +14,6 @@ public class ValuableDetectorItem extends Item {
         super(settings);
     }
 
-    @SuppressWarnings("resource")
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
         
