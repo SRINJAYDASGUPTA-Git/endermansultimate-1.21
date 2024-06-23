@@ -2,7 +2,6 @@ package net.enderman.gemstones.item.custom;
 
 import net.enderman.gemstones.util.ModTags;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
@@ -38,7 +37,7 @@ public class ValuableDetectorItem extends Item {
                 player.sendMessage(Text.literal("No valuable blocks found"), false);
             }
         }
-        context.getStack().damage(1, (LivingEntity) context.getPlayer(), context.getPlayer().getPreferredEquipmentSlot(getDefaultStack()));
+        context.getStack().damage(1, context.getPlayer(), context.getPlayer().getPreferredEquipmentSlot(getDefaultStack()));
         
         return ActionResult.SUCCESS;
     }

@@ -1,0 +1,6 @@
+// 1.21	2024-06-23T09:40:23.7761918	Enderman's Gemstones/Tags for minecraft:block
+916a9c2140aac77e0ec98982cec301c091e85e8b data\minecraft\tags\block\needs_diamond_tool.json
+6ab69ff97ef13e7eda526e2797b8a9ccbfff25bb data\minecraft\tags\block\needs_iron_tool.json
+36fbe34f752d7c56ee03bbf7bd8dd9f263a6e7d1 data\fabric\tags\block\needs_tool_level_4.json
+c3f4f46e8109d955e42c827bac1f86fbb9aee463 data\gemstones\tags\block\valuable_detector_detectable_blocks.json
+cb0655d20dd8ac59ef90fa3720d41ab72d7ba763 data\minecraft\tags\block\mineable\pickaxe.json

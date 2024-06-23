@@ -1,0 +1,10 @@
+// 1.21	2024-06-23T09:40:23.7771913	Enderman's Gemstones/Block Loot Tables
+81e024c38b5218a53adb3a697cbbd6e01eed7431 data\gemstones\loot_table\blocks\raw_ruby_block.json
+5e5441eaefe2b34eff783af07ac64dc42d7045e8 data\gemstones\loot_table\blocks\sapphire_ore.json
+30a9059740925831b88d15287f40953bda108acd data\gemstones\loot_table\blocks\ruby_block.json
+44e14122fd9363380e0fe064f605a462cb6a8253 data\gemstones\loot_table\blocks\deepslate_sapphire_ore.json
+5ece8eb7239f47c651ca6ba1e4dcb82779092af4 data\gemstones\loot_table\blocks\ruby_ore.json
+83c6a845507e030da8877d2b17000a665fee3416 data\gemstones\loot_table\blocks\sapphire_block.json
+dbcb7a4484cb51baa6ef5727be80ee20ee4f35ae data\gemstones\loot_table\blocks\endstone_ruby_ore.json
+58e5e806e33216df18d2a524f89f030a5299f265 data\gemstones\loot_table\blocks\nether_ruby_ore.json
+353950ab8518e59145c9fa9939c6c8a7cbeb5248 data\gemstones\loot_table\blocks\deepslate_ruby_ore.json
