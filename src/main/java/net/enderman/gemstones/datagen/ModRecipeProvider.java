@@ -1,20 +1,26 @@
 package net.enderman.gemstones.datagen;
 
-import java.util.concurrent.CompletableFuture;
-
-import java.util.List;
-
 import net.enderman.gemstones.block.ModBlocks;
 import net.enderman.gemstones.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
+import net.minecraft.advancement.AdvancementCriterion;
+import net.minecraft.advancement.criterion.Criterion;
+import net.minecraft.advancement.criterion.CriterionConditions;
 import net.minecraft.data.server.recipe.RecipeExporter;
-import net.minecraft.registry.RegistryWrapper.WrapperLookup;
-
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
+import net.minecraft.data.server.recipe.ShapelessRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
+import net.minecraft.recipe.Ingredient;
+import net.minecraft.recipe.ShapedRecipe;
 import net.minecraft.recipe.book.RecipeCategory;
+import net.minecraft.registry.RegistryWrapper.WrapperLookup;
+import net.minecraft.util.Identifier;
 
-public class ModRecipeProvider extends FabricRecipeProvider{
+import java.util.List;
+import java.util.concurrent.CompletableFuture;
+
+public class ModRecipeProvider extends FabricRecipeProvider {
     private static final List<ItemConvertible> RUBY_SMELTABLE = List.of(ModBlocks.DEEPSLATE_RUBY_ORE, ModBlocks.ENDSTONE_RUBY_ORE, ModBlocks.NETHER_RUBY_ORE, ModBlocks.RUBY_ORE, ModItems.RAW_RUBY);
 
     private static final List<ItemConvertible> SAPPHIRE_SMELTABLE = List.of(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModBlocks.SAPPHIRE_ORE);
@@ -34,5 +40,63 @@ public class ModRecipeProvider extends FabricRecipeProvider{
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RUBY, RecipeCategory.DECORATIONS, ModBlocks.RUBY_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, RecipeCategory.DECORATIONS, ModBlocks.SAPPHIRE_BLOCK);
         offerReversibleCompactingRecipes(exporter, RecipeCategory.BUILDING_BLOCKS, ModItems.RAW_RUBY, RecipeCategory.DECORATIONS, ModBlocks.RAW_RUBY_BLOCK);
+
+        createDoorRecipe(ModBlocks.RUBY_DOOR, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_DOOR)));
+        createDoorRecipe(ModBlocks.SAPPHIRE_DOOR, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_DOOR)));
+
+        createTrapdoorRecipe(ModBlocks.RUBY_TRAPDOOR, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_TRAPDOOR)));
+        createTrapdoorRecipe(ModBlocks.SAPPHIRE_TRAPDOOR, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_TRAPDOOR)));
+
+        createSlabRecipe(RecipeCategory.MISC, ModBlocks.RUBY_SLAB, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_SLAB)));
+        createSlabRecipe(RecipeCategory.MISC, ModBlocks.SAPPHIRE_SLAB, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_SLAB)));
+
+        createStairsRecipe(ModBlocks.RUBY_STAIRS, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_STAIRS)));
+        createStairsRecipe(ModBlocks.SAPPHIRE_STAIRS, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_STAIRS)));
+
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.RUBY_WALL, ModItems.RUBY);
+        offerWallRecipe(exporter, RecipeCategory.MISC, ModBlocks.SAPPHIRE_WALL, ModItems.SAPPHIRE);
+
+        createFenceRecipe(ModBlocks.RUBY_FENCE, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_FENCE)));
+        createFenceRecipe(ModBlocks.SAPPHIRE_FENCE, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_FENCE)));
+
+        offerPressurePlateRecipe(exporter, ModBlocks.RUBY_PRESSURE_PLATE, ModItems.RUBY);
+        offerPressurePlateRecipe(exporter, ModBlocks.SAPPHIRE_PRESSURE_PLATE, ModItems.SAPPHIRE);
+
+        createFenceGateRecipe(ModBlocks.RUBY_FENCE_GATE, Ingredient.ofItems(ModItems.RUBY)).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_FENCE_GATE)));
+        createFenceGateRecipe(ModBlocks.SAPPHIRE_FENCE_GATE, Ingredient.ofItems(ModItems.SAPPHIRE)).
+                criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_FENCE_GATE)));
+
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.RUBY_BUTTON).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY))
+                .input(ModItems.RUBY)
+                .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.RUBY_BUTTON)));
+        ShapelessRecipeJsonBuilder.create(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BUTTON)
+                .criterion(hasItem(ModItems.SAPPHIRE), conditionsFromItem(ModItems.SAPPHIRE))
+                .input(ModItems.SAPPHIRE)
+                .offerTo(exporter, Identifier.of(getRecipeName(ModBlocks.SAPPHIRE_BUTTON)));
+
     }
 }

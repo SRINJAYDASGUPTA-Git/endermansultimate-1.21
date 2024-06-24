@@ -1,7 +1,5 @@
 package net.enderman.gemstones.datagen;
 
-import java.util.concurrent.CompletableFuture;
-
 import net.enderman.gemstones.block.ModBlocks;
 import net.enderman.gemstones.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -12,13 +10,14 @@ import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.entry.ItemEntry;
-import net.minecraft.loot.entry.LootPoolEntry;
 import net.minecraft.loot.function.ApplyBonusLootFunction;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.RegistryWrapper.WrapperLookup;
+
+import java.util.concurrent.CompletableFuture;
 
 public class ModLootTableProvider extends FabricBlockLootTableProvider {
 
@@ -42,6 +41,29 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.SAPPHIRE_ORE, copperLikeOreDrops(ModBlocks.SAPPHIRE_ORE, ModItems.SAPPHIRE, 2.0f, 5.0f));
         addDrop(ModBlocks.DEEPSLATE_SAPPHIRE_ORE,
                 copperLikeOreDrops(ModBlocks.DEEPSLATE_SAPPHIRE_ORE, ModItems.SAPPHIRE, 2.0f, 5.0f));
+
+        addDrop(ModBlocks.RUBY_STAIRS);
+        addDrop(ModBlocks.RUBY_TRAPDOOR);
+        addDrop(ModBlocks.RUBY_WALL);
+        addDrop(ModBlocks.RUBY_FENCE);
+        addDrop(ModBlocks.RUBY_FENCE_GATE);
+        addDrop(ModBlocks.RUBY_BUTTON);
+        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
+
+        addDrop(ModBlocks.RUBY_DOOR, doorDrops(ModBlocks.RUBY_DOOR));
+        addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+
+        addDrop(ModBlocks.SAPPHIRE_FENCE);
+        addDrop(ModBlocks.SAPPHIRE_FENCE_GATE);
+        addDrop(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        addDrop(ModBlocks.SAPPHIRE_BUTTON);
+        addDrop(ModBlocks.SAPPHIRE_SLAB);
+        addDrop(ModBlocks.SAPPHIRE_STAIRS);
+        addDrop(ModBlocks.SAPPHIRE_WALL);
+        addDrop(ModBlocks.SAPPHIRE_TRAPDOOR);
+
+        addDrop(ModBlocks.SAPPHIRE_DOOR, doorDrops(ModBlocks.SAPPHIRE_DOOR));
+        addDrop(ModBlocks.SAPPHIRE_SLAB, slabDrops(ModBlocks.SAPPHIRE_SLAB));
     }
 
     public LootTable.Builder copperLikeOreDrops(Block drop, Item item, float min, float max) {

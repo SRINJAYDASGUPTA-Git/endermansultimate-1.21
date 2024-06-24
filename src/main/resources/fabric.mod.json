@@ -1,40 +1,40 @@
 {
-	"schemaVersion": 1,
-	"id": "gemstones",
-	"version": "${version}",
-	"name": "Enderman's Gemstones",
-	"description": "Restarting my modding hobby",
-	"authors": [
-		"Me!"
-	],
-	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
-	},
-	"license": "MIT",
-	"icon": "assets/gemstones/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"net.enderman.gemstones.EndermansGemstones"
-		],
-		"client": [
-			"net.enderman.gemstones.EndermansGemstonesClient"
-		],
-		"fabric-datagen": [
-			"net.enderman.gemstones.EndermansGemstonesDataGenerator"
-		]
-	},
-	"mixins": [
-		"gemstones.mixins.json"
-	],
-	"depends": {
-		"fabricloader": ">=0.15.11",
-		"minecraft": "~1.21",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
-	}
+  "schemaVersion": 1,
+  "id": "gemstones",
+  "version": "${version}",
+  "name": "Enderman's Gemstones",
+  "description": "Restarting my modding hobby",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/gemstones/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.enderman.gemstones.EndermansGemstones"
+    ],
+    "client": [
+      "net.enderman.gemstones.EndermansGemstonesClient"
+    ],
+    "fabric-datagen": [
+      "net.enderman.gemstones.EndermansGemstonesDataGenerator"
+    ]
+  },
+  "mixins": [
+    "gemstones.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.15.11",
+    "minecraft": "~1.21",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
 }

@@ -17,7 +17,7 @@ public class ModItemGroups {
             FabricItemGroup.
                     builder().
                     displayName(Text.translatable("itemgroup.gemstone"))
-                    .icon(()->new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
+                    .icon(() -> new ItemStack(ModItems.RUBY)).entries((displayContext, entries) -> {
                         //Items
                         entries.add(ModItems.RUBY);
                         entries.add(ModItems.RAW_RUBY);
@@ -36,8 +36,29 @@ public class ModItemGroups {
                         entries.add(ModBlocks.NETHER_RUBY_ORE);
                         entries.add(ModBlocks.ENDSTONE_RUBY_ORE);
 
+                        entries.add(ModBlocks.RUBY_BUTTON);
+                        entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
+                        entries.add(ModBlocks.RUBY_DOOR);
+                        entries.add(ModBlocks.RUBY_TRAPDOOR);
+                        entries.add(ModBlocks.RUBY_FENCE);
+                        entries.add(ModBlocks.RUBY_FENCE_GATE);
+                        entries.add(ModBlocks.RUBY_STAIRS);
+                        entries.add(ModBlocks.RUBY_SLAB);
+                        entries.add(ModBlocks.RUBY_WALL);
 
-            }).build());
+                        entries.add(ModBlocks.SAPPHIRE_BUTTON);
+                        entries.add(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+                        entries.add(ModBlocks.SAPPHIRE_DOOR);
+                        entries.add(ModBlocks.SAPPHIRE_TRAPDOOR);
+                        entries.add(ModBlocks.SAPPHIRE_FENCE);
+                        entries.add(ModBlocks.SAPPHIRE_FENCE_GATE);
+                        entries.add(ModBlocks.SAPPHIRE_STAIRS);
+                        entries.add(ModBlocks.SAPPHIRE_SLAB);
+                        entries.add(ModBlocks.SAPPHIRE_WALL);
+
+
+                    }).build());
+
     public static void registerItemGroups() {
         EndermansGemstones.LOGGER.info("Registering Mod ItemGroups");
 

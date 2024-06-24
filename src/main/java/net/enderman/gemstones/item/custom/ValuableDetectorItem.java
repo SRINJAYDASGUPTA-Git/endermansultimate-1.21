@@ -16,27 +16,27 @@ public class ValuableDetectorItem extends Item {
 
     @Override
     public ActionResult useOnBlock(ItemUsageContext context) {
-        
-        if(!context.getWorld().isClient){
+
+        if (!context.getWorld().isClient) {
             BlockPos positionClicked = context.getBlockPos();
             PlayerEntity player = context.getPlayer();
             boolean foundBlock = false;
-            for(int i = 0; i <= positionClicked.getY()+64; i++){
+            for (int i = 0; i <= positionClicked.getY() + 64; i++) {
                 BlockState blockState = context.getWorld().getBlockState(positionClicked.down(i));
 
-                if(isValuableBlock(blockState)){
-                    player.sendMessage(Text.literal("Found "+ blockState.getBlock().asItem().getName().getString()+" at " + positionClicked.down(i).getX() + ", " + positionClicked.down(i).getY() + ", " + positionClicked.down(i).getZ()), false);
+                if (isValuableBlock(blockState)) {
+                    player.sendMessage(Text.literal("Found " + blockState.getBlock().asItem().getName().getString() + " at " + positionClicked.down(i).getX() + ", " + positionClicked.down(i).getY() + ", " + positionClicked.down(i).getZ()), false);
                     foundBlock = true;
                     break;
                 }
             }
 
-            if(!foundBlock){
+            if (!foundBlock) {
                 player.sendMessage(Text.literal("No valuable blocks found"), false);
             }
         }
         context.getStack().damage(1, context.getPlayer(), context.getPlayer().getPreferredEquipmentSlot(getDefaultStack()));
-        
+
         return ActionResult.SUCCESS;
     }
 
