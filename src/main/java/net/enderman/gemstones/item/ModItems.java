@@ -1,7 +1,9 @@
 package net.enderman.gemstones.item;
 
 import net.enderman.gemstones.EndermansGemstones;
+import net.enderman.gemstones.item.custom.RubySword;
 import net.enderman.gemstones.item.custom.ValuableDetectorItem;
+import net.enderman.gemstones.item.materials.RubyToolMaterial;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
@@ -20,7 +22,7 @@ public class ModItems {
 //    public static final Item RUBY_AXE = registerItem("ruby_axe", new AxeItem(ModToolMaterial.RUBY, new Item.Settings().attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterial.RUBY,3.0f, 2.0f))));
 //    public static final Item RUBY_HOE = registerItem("ruby_hoe", new HoeItem(ModToolMaterial.RUBY, new Item.Settings().attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterial.RUBY, 0f, 0f))));
 //    public static final Item RUBY_SHOVEL = registerItem("ruby_shovel", new ShovelItem(ModToolMaterial.RUBY, new Item.Settings().attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterial.RUBY, 0.0f, 0.0f))));
-//    public static final Item RUBY_SWORD = registerItem("ruby_sword", new SwordItem(ModToolMaterial.RUBY, new Item.Settings().attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterial.RUBY, 5, 2.0f))));
+    public static final Item RUBY_SWORD = registerItem("ruby_sword", new RubySword(RubyToolMaterial.INSTANCE));
 
     public static final Item ALEXANDRITE = registerItem("alexandrite", new Item(new Item.Settings()));
 

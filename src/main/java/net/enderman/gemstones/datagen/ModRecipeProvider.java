@@ -136,13 +136,13 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 //                input('S', Ingredient.ofItems(Items.STICK)).
 //                offerTo(exporter, Identifier.of(getRecipeName(ModItems.RUBY_SHOVEL)));
 //
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SWORD, 1).
-//                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
-//                pattern("X").
-//                pattern("X").
-//                pattern("S").
-//                input('X', ModItems.RUBY).
-//                input('S', Ingredient.ofItems(Items.STICK)).
-//                offerTo(exporter, Identifier.of(getRecipeName(ModItems.RUBY_SWORD)));
+        ShapedRecipeJsonBuilder.create(RecipeCategory.TOOLS, ModItems.RUBY_SWORD, 1).
+                criterion(hasItem(ModItems.RUBY), conditionsFromItem(ModItems.RUBY)).
+                pattern("X").
+                pattern("X").
+                pattern("S").
+                input('X', ModItems.RUBY).
+                input('S', Ingredient.ofItems(Items.STICK)).
+                offerTo(exporter, Identifier.of(getRecipeName(ModItems.RUBY_SWORD)));
     }
 }
