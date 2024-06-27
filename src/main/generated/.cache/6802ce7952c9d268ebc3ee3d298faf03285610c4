@@ -1,4 +1,4 @@
-// 1.21	2024-06-24T21:46:09.0521295	Enderman's Gemstones/Block Loot Tables
+// 1.21	2024-06-27T21:44:11.9403403	Enderman's Gemstones/Block Loot Tables
 b12cc3cbc7a51362e9db1db22667cfe79b33aa8c data\gemstones\loot_table\blocks\sapphire_door.json
 fbb0fce5ac2ac8d26ad52cb318efdeda53b5ca88 data\gemstones\loot_table\blocks\sapphire_stairs.json
 47ca4675c86a3f89ca002bc3ea316f13af457a6a data\gemstones\loot_table\blocks\ruby_stairs.json
@@ -6,8 +6,8 @@ fbb0fce5ac2ac8d26ad52cb318efdeda53b5ca88 data\gemstones\loot_table\blocks\sapphi
 30a9059740925831b88d15287f40953bda108acd data\gemstones\loot_table\blocks\ruby_block.json
 64a2da7a48be059f116cad203f809accba810c09 data\gemstones\loot_table\blocks\ruby_wall.json
 58e5e806e33216df18d2a524f89f030a5299f265 data\gemstones\loot_table\blocks\nether_ruby_ore.json
-259b717c6b17977a60d74391627218aa5b7a8e25 data\gemstones\loot_table\blocks\sapphire_fence_gate.json
 01d37a0db727d21da50312f1683082bcd733356f data\gemstones\loot_table\blocks\ruby_fence.json
+259b717c6b17977a60d74391627218aa5b7a8e25 data\gemstones\loot_table\blocks\sapphire_fence_gate.json
 6854fe99c4fb21058978940bc80293d92b3c2249 data\gemstones\loot_table\blocks\ruby_fence_gate.json
 22c9c0d1a6cf6da58aab2f3a8d68164d831d6888 data\gemstones\loot_table\blocks\ruby_pressure_plate.json
 353950ab8518e59145c9fa9939c6c8a7cbeb5248 data\gemstones\loot_table\blocks\deepslate_ruby_ore.json
