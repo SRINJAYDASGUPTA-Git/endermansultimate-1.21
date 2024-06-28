@@ -10,7 +10,7 @@ import net.minecraft.util.Identifier;
 public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> VALUABLE_DETECTOR_DETECTABLE_BLOCKS = createTag("valuable_detector_detectable_blocks");
-
+        public static final TagKey<Block> INCORRECT_FOR_RUBY = createTag("incorrect_for_ruby");
         private static TagKey<Block> createTag(String name) {
             return TagKey.of(RegistryKeys.BLOCK, Identifier.of(EndermansGemstones.MOD_ID, name));
         }

@@ -24,10 +24,10 @@ public class ModItemGroups {
                         entries.add(ModItems.SAPPHIRE);
                         entries.add(ModItems.ALEXANDRITE);
                         entries.add(ModItems.VALUABLE_DETECTOR);
-//                        entries.add(ModItems.RUBY_PICKAXE);
-//                        entries.add(ModItems.RUBY_AXE);
-//                        entries.add(ModItems.RUBY_HOE);
-//                        entries.add(ModItems.RUBY_SHOVEL);
+                        entries.add(ModItems.RUBY_PICKAXE);
+                        entries.add(ModItems.RUBY_AXE);
+                        entries.add(ModItems.RUBY_HOE);
+                        entries.add(ModItems.RUBY_SHOVEL);
                         entries.add(ModItems.RUBY_SWORD);
 
                         //Blocks

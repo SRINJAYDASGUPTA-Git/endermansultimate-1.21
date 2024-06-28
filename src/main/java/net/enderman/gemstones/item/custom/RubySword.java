@@ -10,6 +10,6 @@ public class RubySword extends SwordItem {
     }
 
     private static Settings getItemSettings() {
-        return (new Settings()).attributeModifiers(SwordItem.createAttributeModifiers(RubyToolMaterial.INSTANCE, 1, -1.4F));
+        return (new Settings()).attributeModifiers(SwordItem.createAttributeModifiers(RubyToolMaterial.INSTANCE, 5, -1.4F));
     }
 }
